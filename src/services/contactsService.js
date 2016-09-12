@@ -1,4 +1,4 @@
-angular.module( "AngularMail" )
+angular.module( "angularMail" )
 .service( "contactsService", function() {
 	this.getContacts = function() {
 		return contacts;

@@ -86,3 +86,8 @@ nav {
 tr {
 	cursor: pointer;
 }
+
+input {
+	width: 250px;
+	margin: 8px;
+}

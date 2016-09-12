@@ -1,11 +1,11 @@
-angular.module( "AngularMail" )
+angular.module( "angularMail" )
 .service( "mailService", function() {
 	this.getMail = function() {
 		return mail;
 	}
 } );
 
-var mail = [
+  var mail = [
 	{
 		"_id": "57890a9096d0df3cc1a3a655",
 		"name": "Mccoy Floyd",

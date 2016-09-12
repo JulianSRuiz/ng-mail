@@ -1,4 +1,8 @@
 <main class="contacts-wrapper">
+
+
+<strong>Search:</strong> <input type="text" ng-model='filterBy'>
+<br>
 	<table class="table table-bordered table-hover">
 		<tr>
 			<td>Name</td>
@@ -6,11 +10,11 @@
 			<td>Email</td>
 			<td>Phone #</td>
 		</tr>
-		<tr>
-			<td>Ryan Walsh</td>
-			<td>DevMountain</td>
-			<td>ryan.walsh@devmounta.in</td>
-			<td>Wouldn't you like to know?</td>
+		<tr ng-repeat='contact in contacts | filter: filterBy' ng-click='autofill(contact)'>
+			<td>{{contact.name}}</td>
+			<td>{{contact.company}}</td>
+			<td>{{contact.email}}</td>
+			<td>{{contact.phone}}</td>
 		</tr>
 	</table>
 </main>
